@@ -1,0 +1,24 @@
+body{
+    padding: 20px;
+    display: grid;
+    background-color: beige;
+    /* grid-template-columns: 1fr 1fr 1fr; */
+    
+}
+header{
+    background-color: cornflowerblue;
+    /* padding: 20px; */
+}
+nav{
+    /* background-color: black; */
+    display: flex;
+    justify-content: space-between;
+    background-color: azure;
+}
+
+nav a{
+    /* color: white; */
+    padding: 30px;
+    text-decoration: none;
+    text-align: center;
+}

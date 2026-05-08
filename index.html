@@ -3,9 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals">
+    <meta name="author" content="Henry Arinze Ohia">
+
+    <title>WDD 131 | Dynamic Web Fundamentals | Henry Ohia</title>
+
+    <link rel="stylesheet" href="styles/base.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital@0;1&display=swap" rel="stylesheet">
+
+    <script src="scripts/getdates.js" defer></script>
 </head>
 <body>
-    <h1>WDD 131 - Henry</h1>
+    <header>
+        <span id="course-title">WDD 131 - Dynamic Web Fundamentals</span>
+        <nav>
+            <ul>
+                <li><a href="https://www.linkedin.com/in/henry-ohia-7809a6220/" class="active">LinkedIn</a></li>
+                <li><a href=" https://byupw.instructure.com/">Canvas</a></li>
+                <li><a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/1-ne/3?lang=eng&id=p7#p7">Scripture</a></li>
+                <li><a href="">Final Project</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Henry Arinze Ohia</h1>
+        <section class="card">
+            <h2>About Me</h2>
+            <img src="images/rsz_11image1.jpg" alt="My Photo">
+            <p>My name is Henry Arinze Ohia. I am learning web design and improving my HTML,CSS, and JavaScript skill. I hope to be proficient in designing a website by the end of this course.</p>
+        </section>
+
+        <section class="card">
+            <h2>Lagos, Nigeria</h2>
+            <div class="lag-img"><img src="images/rsz_3pexels-ademola-adeola-2148696501-36086895.jpg" alt="Lagos"></div>
+            <p>Lagos is one of the largest cities in Nigeria and is known for business, technology, entertainment, and culture.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> | Henry Arinze Ohia | Lagos, Nigeria</p>
+        <p id="lastModified"></p>
+    </footer>
 </body>
 </html>

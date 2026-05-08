@@ -14,7 +14,6 @@ header{
 nav{
     /* background-color: black; */
     display: flex;
-    justify-content: space-around;
     background-color: azure;
     min-height: 40px;
     /* margin: 0 auto 2rem; */
@@ -24,7 +23,10 @@ nav a{
     color: black;
     padding: 30px;
     text-decoration: none;
+    justify-content: space-around;
     text-align: center;
+    /* flex: 1 1 auto; */
+    /* display: block; */
 }
 
 main{

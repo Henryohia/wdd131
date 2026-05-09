@@ -13,10 +13,10 @@ body{
     margin: 20px;
 }    
 
-header, footer{
+header{
     background-color: #846a6a;
     margin: 5px;
-    padding: 0.1rem;
+    color: #fff;
 }
 header span{
     display: block;
@@ -26,7 +26,7 @@ header span{
 }
 
 nav{
-    background-color: #a2999e;
+    background-color: #353b3c;
     margin: 0 auto;
     /* flex: 1 1 auto; */
 }
@@ -45,11 +45,11 @@ nav a{
 }
 nav a:hover{
     cursor: pointer;
-    color: #353b3c;
+    color: red;
 }
-.active{
+/* .active{
     color: yellow;
-}
+} */
 
 
 h1{
@@ -80,3 +80,15 @@ main h1{
 /* main h2{
     background-color: #353b3c;
 } */
+footer p{
+    text-align: center;
+    justify-content: space-around;
+    
+}
+footer{
+    background-color: #846a6a;
+    margin: 5px;
+    padding: 0.1rem;
+    color: #fff;
+    
+}

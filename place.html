@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals, created my Henry Arinze Ohia on the 6th of May. I am developing and improving my web design skills.">
+    <meta name="author" content="Henry Arinze Ohia">
+
+    <title>Country Page</title>
+
+    <link rel="stylesheet" href="styles/place-base.css">
+    <link rel="stylesheet" href="styles/place-large.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital@0;1&display=swap" rel="stylesheet">
+
+    <script src="scripts/place.js" defer></script>
+</head>
+<body>
+    <header>
+        <span id="page-title">Nigeria</span>
+
+    </header>
+
+    <main>
+        <div class="hero">
+            <picture>
+                <source media="(min-width: 900px)" srcset="images/naija-large.webp">
+                <source media="(min-width: 500px)" srcset="images/naija-medium.webp">
+                <img src="images/naija-small.webp" alt="Small hero image" width="600" height="800">
+            </picture>
+        </div>
+
+        <div class="card">
+            <h2>Data</h2>
+
+            <p><strong>Area:</strong><span id="area"></span>923,768 km²</p>
+            <p><strong>Population:</strong> <span id="population"></span> 242,431,832</p>
+            <p><strong>Capital:</strong> <span id="capital">Abuja</span></p>
+            <p><strong>Languages:</strong> <span id="language">English, Nigerian Pidgin, and over 500 other languages</span></p>
+            <p><strong>Time Zone:</strong> <span id="timezone">WAT (UTC+1)</span></p>
+            <p><strong>Currency:</strong> <span id="currency">Nigerian Naira (₦)</span></p>
+            <p><strong>Calling Code:</strong> <span id="calling-code">+234</span></p>
+            <p><strong>Internet TLD:</strong> <span id="tld">.ng </span></p>
+        </div>
+
+        <div class="weather-card">
+            <h2>Weather</h2>
+            <img src="images/cloud-sun-fill.svg" alt="Sunny Weather Icon" class="weather-icon">
+
+            <p><strong>Temperature:</strong><span id="temperature"></span></p>
+            <p><strong>Conditions:</strong> <span id="conditions"></span></p>
+            <p><strong>wind:</strong> <span id="wind"></span></p>
+            <p><strong>Wind Chill:</strong> <span id="windchill"></span></p>
+        </div>
+
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> | Henry Arinze Ohia | Lagos, Nigeria</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>

@@ -3,9 +3,117 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals, created my Henry Arinze Ohia on the 6th of May. I am developing and improving my web design skills.">
+    <meta name="author" content="Henry Arinze Ohia">
+    <title>Product Review Form</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/form-large.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital@0;1&display=swap" rel="stylesheet">
+
+    <script src="scripts/forms.js" defer></script>
+
+
 </head>
 <body>
-    
+    <header>
+        <h1>Product Review</h1>
+    </header>
+    <main>
+        <form method="get" action="review.html">
+
+            <fieldset>
+                <!-- <legend>Product Information</legend> -->
+
+                <label for="product">Product Name</label>
+                <select id="product" name="product" required>
+                    <option value="" disabled selected>Select a Product ...</option>
+                </select>
+            </fieldset>
+
+            <!-- Overall Rating -->
+
+            <fieldset>
+
+                <!-- <legend>Overall Rating</legend> -->
+
+                <label for="rating">Overall Rating</label>
+                <div class="stars">
+                    <input type="radio" id="fivestar" name="rating" value="5" required><label for="fivestar"></label>
+                    <input type="radio" id="fourstar" name="rating" value="4" required><label for="fourstar"></label>
+                    <input type="radio" id="threestar" name="rating" value="3" required><label for="threestar"></label>
+                    <input type="radio" id="twostar" name="rating" value="2" required><label for="twostar"></label>
+                    <input type="radio" id="onestar" name="rating" value="1" required><label for="onestar"></label>
+                </div>
+            </fieldset>
+
+
+            <!-- Date of Installation -->
+
+            <fieldset>
+
+                <label for="installation-date">Date of Installation</label>
+                <input type="date" id="installation-date" name="installation-date" required>
+            </fieldset>
+
+
+            <!-- Features -->
+
+            <!-- <fieldset> -->
+
+                <!-- <legend>Features</legend> -->
+
+            <div class="checkbox-group">
+                    <label for="" class="inline">Which features did you find useful in the product? (Check all that apply)</label>
+                    <input type="checkbox" id="feature1" name="features" value="Feature 1">
+                    <label for="feature1" class="inline">Durability</label>
+                    <input type="checkbox" id="feature2" name="features" value="Feature 2">
+                    <label for="feature2" class="inline">Ease of Use</label>
+                    <input type="checkbox" id="feature3" name="features" value="Feature 3">
+                    <label for="feature3" class="inline">Performance</label>
+                    <input type="checkbox" id="feature4" name="features" value="Feature 4">
+                    <label for="feature4" class="inline">Affordability</label>
+                    <input type="checkbox" id="feature5" name="features" value="Feature 5">
+                    <label for="feature5" class="inline">Design</label>
+            </div>
+
+                
+
+            <!-- </fieldset> -->
+
+            <!-- Written Review -->
+
+            <fieldset>
+                <!-- <legend>Written Review</legend> -->
+
+                <label for="review">Write your review:</label>
+                <textarea id="review" name="review" rows="4" cols="50"></textarea>
+
+            </fieldset>
+
+            <!-- User Name -->
+            <fieldset>
+                <!-- <legend>User Name</legend> -->
+
+                <label for="username">Your Name (Optional)</label>
+                <input type="text" id="username" name="username">
+            </fieldset>
+
+            <!-- Form Submission Button -->
+            <input type="submit" value="Send Review">
+
+        </form>
+
+
+
+    </main>
+    <footer>
+        <p>&copy; <span id="currentyear"></span> | Henry Arinze Ohia | Lagos, Nigeria</p>
+        <p id="lastModified"></p>
+        <p>Reviews Submitted: <span id="reviewCount"></span></p>
+    </footer>
 </body>
 </html>

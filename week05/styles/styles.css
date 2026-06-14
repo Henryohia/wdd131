@@ -1,0 +1,324 @@
+/* ---------- ROOT COLORS ---------- */
+
+:root{
+    --primary:#6C9A8B;
+    --accent:#E8998D;
+    --soft:#EED2CC;
+    --background:#FBF7F4;
+    --dark:#A1683A;
+
+    --radius:12px;
+}
+
+
+/* ---------- RESET ---------- */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+
+/* ---------- PAGE ---------- */
+
+body{
+
+    font-family:Arial, sans-serif;
+
+    background:var(--background);
+
+    color:#333;
+
+    line-height:1.6;
+
+    padding:2rem;
+
+}
+
+
+/* ---------- HEADER ---------- */
+
+header{
+
+    text-align:center;
+
+    margin-bottom:2rem;
+
+}
+
+header h1{
+
+    color:var(--primary);
+
+    font-size:2rem;
+
+}
+
+
+/* ---------- FORM CARD ---------- */
+
+form{
+
+    max-width:750px;
+
+    margin:0 auto;
+
+    background:white;
+
+    padding:2.5rem;
+
+    border-radius:20px;
+
+    box-shadow:
+    0 10px 30px
+    rgba(0,0,0,.08);
+
+}
+
+
+/* ---------- SECTION GROUPING ---------- */
+
+fieldset{
+
+    border:none;
+
+    margin-bottom:2rem;
+
+}
+
+/* legend{
+
+    font-size:1.3rem;
+
+    font-weight:700;
+
+    color:var(--primary);
+
+    margin-bottom:1rem;
+
+} */
+
+
+/* ---------- LABELS ---------- */
+
+label{
+
+    display:block;
+
+    margin-bottom:.5rem;
+
+    font-weight:600;
+
+}
+
+
+/* ---------- INPUTS ---------- */
+
+input,
+select,
+textarea{
+
+    width:100%;
+
+    padding:1rem;
+
+    font-size:1rem;
+
+    border: 1px solid #ddd;
+
+    border-radius: var(--radius);
+
+    transition:.25s;
+
+}
+
+
+/* ---------- FOCUS ---------- */
+
+input:focus,
+select:focus,
+textarea:focus{
+
+    outline:none;
+
+    border-color: var(--primary);
+
+    box-shadow: 0 0 0 4px rgba(108,154,139,.15);
+
+}
+
+
+/* ---------- TEXTAREA ---------- */
+
+textarea{
+
+    min-height:160px;
+
+    resize:vertical;
+
+}
+
+
+/* ---------- STARS ---------- */
+
+input[type="radio"] {
+	display: none;
+	position: relative;
+	caret-color: rgba(0, 0, 0, 0);
+}
+
+.stars {
+	display: flex;
+	flex-direction: row-reverse;
+	justify-content: left;
+}
+
+.stars > label {
+	color: gold;
+	width: 30px;
+	height: 30px;
+	font-size: 2rem;
+	margin-left: 5px;
+	display: flex;
+	align-items: center;
+	caret-color: rgba(0, 0, 0, 0); /* remove blinking cursor*/
+}
+
+.stars > label:hover {
+	color: #000;
+}
+
+.stars > label::before {
+	content: "\2606";
+}
+
+.stars input:checked ~ label::before {
+	content: "\2605";
+}
+
+
+/* ---------- CHECKBOX ---------- */
+input[type=checkbox] {
+	margin-left: 10px;
+}
+
+.checkbox-group {
+	align-items: center;
+}
+
+.inline {
+	display: inline;
+}
+/* 
+.features{
+
+    display:grid;
+
+    grid-template-columns:
+
+    repeat(auto-fit,minmax(180px,1fr));
+
+    gap:.8rem;
+
+} */
+
+/* .features div{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:.6rem;
+
+} */
+
+/* .features input{
+
+    width:auto;
+
+}  */
+
+
+/* ---------- BUTTON ---------- */
+
+input[type="submit"]{
+
+    background:
+
+    var(--primary);
+
+    color:white;
+
+    border:none;
+
+    padding:1rem;
+
+    font-size:1rem;
+
+    font-weight:700;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+input[type="submit"]:hover{
+
+    background:
+
+    var(--dark);
+
+    transform:
+    translateY(-2px);
+
+}
+
+
+/* ---------- PLACEHOLDER ---------- */
+
+::placeholder{
+
+    color:#999;
+
+}
+
+
+/* ---------- REQUIRED ---------- */
+
+label::after{
+
+    content:"";
+
+}
+
+label.required::after{
+
+    content:" *";
+
+    color:red;
+
+}
+
+
+/* ---------- FOOTER ---------- */
+
+footer{
+    text-align:center;
+    margin-top:2rem;
+    justify-content:spa;
+}
+
+header, footer{
+    padding: 1rem;
+    border-radius: 10px;
+    background-color: var(--soft);
+}
+
+footer p{
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--dark);
+}
+

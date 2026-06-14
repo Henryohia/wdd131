@@ -1,0 +1,56 @@
+
+/* ---------- RESPONSIVE ---------- */
+
+@media screen and (min-width: 500px) {
+    body{
+
+        padding:2rem;
+
+    }
+
+    form{
+
+        padding:2.5rem;
+
+    }
+
+    .star1{
+
+        justify-content:flex-start;
+
+    }
+
+}
+
+@media screen and (min-width: 64em) {
+    body{
+
+        padding:2rem;
+
+    }
+
+    form{
+
+        padding:2.5rem;
+
+    }
+
+    .star1{
+
+        justify-content:flex-start;
+
+    }
+
+    footer{
+
+        display:flex;
+
+        text-align:center;
+
+        margin-top:2rem;
+
+        justify-content:space-between;
+
+    }
+
+}

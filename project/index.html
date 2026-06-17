@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals, created my Henry Arinze Ohia on the 6th of May. I am developing and improving my web design skills.">
+    <meta name="author" content="Henry Arinze Ohia">
+
+    <title>Explore Nigeria</title>
+
+    <link rel="stylesheet" href="styles/explore-nigeria.css">
+    <link rel="stylesheet" href="styles/explore-nigeria-large.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital@0;1&display=swap" rel="stylesheet">
+
+    <script src="scripts/explore-nigeria.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1 id="course-title">Explore Nigeria</h1>
+        <button type="button" id="menu" aria-label="button"></button>
+        <nav>
+            <ul class="navigation">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="attractions.html">Attractions</a></li>
+                <li><a href="travel-guide.html">Travel Guide</a></li>
+                <li><a href="food.html">Food</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="home">
+        <h2>Home</h2>
+        <div class="hero">
+            <picture>
+                <source media="(min-width: 900px)" srcset="images/hero-large2.webp">
+                <source media="(min-width: 750px)" srcset="images/hero-large.webp">
+                <img src="images/hero-small.webp" alt="Small hero image" width="600" height="800">
+            </picture>
+        </div>
+        <div class="welcome">
+            <h3>Welcome to Explore Nigeria Tourism</h3>
+
+            <p> Nigeria is a vibrant country rich in culture, history, wildlife, and breathtaking natural landscapes. From towering rock formations and lush forests to beautiful beaches and cultural festivals, Nigeria offers unique experiences for travelers from around the world. 
+            </p> 
+            <!-- <p>
+                Explore famous tourist destinations, discover hidden gems, and learn about the diverse traditions that make Nigeria one of Africa's most fascinating travel destinations. Whether you're an adventure seeker, a culture enthusiast, or simply looking for a memorable getaway, Nigeria has something to offer everyone.
+            </p> -->
+        </div>
+        
+        
+        <div class="cards"> 
+            <div class="featured">
+                <h3>Featured Attractions</h3>
+                <a href="attractions.html" class="cta-btn"> Explore Attractions </a>
+            </div>
+            <article class="card"> 
+                <img src="images/olumo-rock.jpg" alt="Olumo Rock" loading="lazy"> 
+                <h3>Olumo Rock</h3> 
+                <p> Located in Abeokuta, Ogun State, Olumo Rock is one of Nigeria's most famous historical landmarks. It served as a natural fortress for the Egba people during intertribal wars and offers spectacular views of the city. </p> 
+            </article> 
+            <article class="card"> 
+                <img src="images/lcc-img.jpg" alt="Lekki Conservation Centre" loading="lazy"> 
+                <h3>Lekki Conservation Centre</h3> 
+                <p> Situated in Lagos, this nature reserve is home to Africa's longest canopy walkway. Visitors can enjoy wildlife viewing, nature trails, and a peaceful escape from city life. </p> 
+            </article> 
+            <article class="card"> 
+                <img src="images/500px-Yankari_Entry_Gate.jpg" alt="Yankari National Park" loading="lazy"> 
+                <h3>Yankari National Park</h3> 
+                <p> Located in Bauchi State, Yankari National Park is Nigeria's premier wildlife destination. Visitors can see elephants, baboons, antelopes, and relax in the famous Wikki Warm Springs. </p> 
+            </article>
+        </div> 
+
+    </main>
+        
+    <footer>
+        <p>&copy; <span id="currentyear"></span> | Henry Arinze Ohia | Lagos, Nigeria</p>
+        <p id="lastModified"></p>
+        <p id="currentDate"></p>
+        <p id="reviewCount"></p>
+
+    </footer>
+</body>
+</html>

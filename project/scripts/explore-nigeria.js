@@ -187,8 +187,10 @@ currentDate.textContent =
 
 // Page 4 ===========
 
-document.querySelector("#year").textContent =
-new Date().getFullYear();
+
+
+// guide
+
 
 
 const questions =

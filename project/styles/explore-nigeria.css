@@ -127,7 +127,16 @@ main {
   /* max-width: 800px; */
   margin: 0 auto;
 }
+.label {
+	font-family: Arial, sans-serif;
+	font-weight: 700;
+}
 
+.visits {
+	color: navy;
+	font-weight: bolder;
+	font-size: larger;
+}
 
 /* Hero Image */
 .hero {

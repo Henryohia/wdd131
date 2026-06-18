@@ -11,7 +11,7 @@ const foods = [
     name: "Pounded Yam & Egusi Soup",
     region: "Southern Nigeria",
     description: "A smooth yam dough served with rich melon seed soup.",
-    image: "images/egusi.webp"
+    image: "https://wigmoretrading.com/wp-content/uploads/2024/08/iStock-1398351215-1.jpg"
 },
 
 {

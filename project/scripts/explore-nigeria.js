@@ -31,29 +31,26 @@ if (reviewCount === null) {
 
 
 // Increase count
-reviewCount++;
+// 1️⃣ Initialize display element variable
+const visitsDisplay = document.querySelector(".visits");
 
+// 2️⃣ Get the stored VALUE for the numVisits-ls KEY in localStorage if it exists. If the numVisits KEY is missing, then assign 0 to the numVisits variable.
+let numVisits = Number(window.localStorage.getItem("numVisits-ls")) || 0;
 
-// Save updated value
-localStorage.setItem(
-    "reviewCount",
-    reviewCount
-);
+// 3️⃣ Determine if this is the first visit or display the number of visits. We wrote this example backwards in order for you to think deeply about the logic.
+if (numVisits !== 0) {
+	visitsDisplay.textContent = numVisits;
+} else {
+	visitsDisplay.textContent = `This is your first visit. 🥳 Welcome!`;
+}
 
+// 4️⃣ increment the number of visits by one.
+numVisits++;
 
-// Display on page
-document.querySelector(
-    "#reviewCount"
-).textContent = reviewCount;
+// 5️⃣ store the new visit total into localStorage, key=numVisits-ls
+localStorage.setItem("numVisits-ls", numVisits);
 
-
-// Local storage/ current date and time display
-const currentDate = document.querySelector("#currentDate");
-
-const now = new Date();
-
-currentDate.textContent =
-`Current Date and Time: ${now.toLocaleString()}`;
+// 💡A client can view the localStorage data using the Applications panel in the browsers's DevTools - check it out on any major site.
 
 
 
@@ -61,127 +58,6 @@ currentDate.textContent =
 
 // // ------------ Page 2 Arrays ----------------------------
 
-// page 2 - Attractions and Food Sections
-
-// const attractions = [
-
-//     {
-//         name: "Olumo Rock",
-//         location: "Abeokuta, Ogun State",
-//         category: "Historical",
-//         description: "A historic rock formation that served as a refuge for the Egba people during ancient wars.",
-//         image: "https://upload.wikimedia.org/wikipedia/commons/7/7d/Olumo_Rock_Abeokuta.jpg"
-//     },
-
-//     {
-//         name: "Lekki Conservation Centre",
-//         location: "Lagos State",
-//         category: "Nature",
-//         description: "A nature reserve famous for its canopy walkway and wildlife conservation efforts.",
-//         image: "https://upload.wikimedia.org/wikipedia/commons/5/5c/Lekki_Conservation_Centre_Canopy_Walkway.jpg"
-//     },
-
-//     {
-//         name: "Yankari National Park",
-//         location: "Bauchi State",
-//         category: "Nature",
-//         description: "Nigeria's largest wildlife park, home to elephants, baboons, and warm springs.",
-//         image: "https://upload.wikimedia.org/wikipedia/commons/3/39/Yankari_Game_Reserve.jpg"
-//     },
-
-//     {
-//         name: "Osun-Osogbo Sacred Grove",
-//         location: "Osun State",
-//         category: "Cultural",
-//         description: "A UNESCO World Heritage Site containing shrines, sculptures, and sacred forests.",
-//         image: "https://upload.wikimedia.org/wikipedia/commons/f/f2/Osun_Osogbo_Sacred_Grove.jpg"
-//     },
-
-//     {
-//         name: "Obudu Mountain Resort",
-//         location: "Cross River State",
-//         category: "Nature",
-//         description: "A scenic mountain resort known for its cool weather and breathtaking views.",
-//         image: "https://upload.wikimedia.org/wikipedia/commons/0/03/Obudu_Cattle_Ranch.jpg"
-//     },
-
-//     {
-//         name: "Nike Art Gallery",
-//         location: "Lagos State",
-//         category: "Cultural",
-//         description: "One of Africa's largest art galleries showcasing Nigerian culture and creativity.",
-//         image: "https://upload.wikimedia.org/wikipedia/commons/9/95/Nike_Art_Gallery_Lagos.jpg"
-//     },
-
-//     {
-//         name: "Kajuru Castle",
-//         location: "Kaduna State",
-//         category: "Historical",
-//         description: "A medieval-style castle built in the hills of Kaduna with stunning architecture.",
-//         image: "https://upload.wikimedia.org/wikipedia/commons/6/6d/Kajuru_Castle.jpg"
-//     },
-
-//     {
-//         name: "Idanre Hills",
-//         location: "Ondo State",
-//         category: "Nature",
-//         description: "A collection of spectacular hills featuring ancient settlements and hiking trails.",
-//         image: "https://upload.wikimedia.org/wikipedia/commons/7/7f/Idanre_Hills.jpg"
-//     },
-
-//     {
-//         name: "Awhum Waterfall",
-//         location: "Enugu State",
-//         category: "Nature",
-//         description: "A beautiful waterfall surrounded by lush vegetation and spiritual significance.",
-//         image: "https://upload.wikimedia.org/wikipedia/commons/2/27/Awhum_Waterfall.jpg"
-//     },
-
-//     {
-//         name: "Zuma Rock",
-//         location: "Niger State",
-//         category: "Historical",
-//         description: "A massive monolith often called the Gateway to Abuja and featured on the ₦100 note.",
-//         image: "https://upload.wikimedia.org/wikipedia/commons/8/83/Zuma_Rock_Nigeria.jpg"
-//     }
-
-// ];
-
-
-
-// createAttractionCard(attractions);
-
-
-// function createAttractionCard(filteredAttraction) {
-//     document.querySelector("#featuredAttraction").innerHTML = "";
-
-//     filteredAttraction.forEach(attraction => {
-//         let card = document.createElement("section");
-//         let attractionName = document.createElement("h2");
-//         let location = document.createElement("p");
-//         let category = document.createElement("p");
-//         let description = document.createElement("p");
-//         let image = document.createElement("img");
-
-//         attractionName.textContent = attraction.name;
-//         location.innerHTML = `<span class="label"><strong>Location:</strong></span> ${attraction.location}`;
-//         description.innerHTML = `<span class="label"><strong>Description:</strong></span> ${attraction.description}`;
-//         category.innerHTML = `<span class="label"><strong>Category:</strong></span> ${attraction.category}`;
-//         image.setAttribute("src", attraction.imageUrl);
-//         image.setAttribute("alt", attraction.name);
-//         image.setAttribute("loading", "lazy");
-//         image.width = 500;
-//         image.height = 250;
-
-//         card.appendChild(attractionName);
-//         card.appendChild(location);
-//         card.appendChild(description);
-//         card.appendChild(category);
-//         card.appendChild(image);
-
-//         document.querySelector("#featuredAttraction").appendChild(card);
-//     });
-// }
 
 
 

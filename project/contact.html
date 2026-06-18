@@ -39,17 +39,13 @@
         <form method="get" action="review.html">
 
             <!-- Attraction -->
-            <!-- <label for="attraction">
+            <label for="attraction">
                 Select Attraction *
-            </label> -->
+            </label>
 
-            <fieldset>
-                    <!-- <legend>Written Review</legend> -->
-
-                    <label for="review">Write your review:</label>
-                    <textarea id="review" name="review" rows="4" cols="50"></textarea>
-
-                </fieldset>
+            <select id="attraction" name="attraction" required>
+                <option value="" disabled selected>Select an attraction...</option>
+            </select>
 
             <!-- Rating -->
             <fieldset>
@@ -87,13 +83,13 @@
 
         <!-- Written Review -->
 
-                <!-- <fieldset> -->
+                <fieldset>
                     <!-- <legend>Written Review</legend> -->
 
-                    <!-- <label for="review">Write your review:</label>
-                    <textarea id="review" name="review" rows="4" cols="50"></textarea> -->
+                    <label for="review">Write your review:</label>
+                    <textarea id="review" name="review" rows="4" cols="50"></textarea>
 
-                <!-- </fieldset> -->
+                </fieldset>
 
                 <!-- User Name -->
                 <fieldset>

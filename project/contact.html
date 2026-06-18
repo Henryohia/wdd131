@@ -39,13 +39,15 @@
         <form method="get" action="review.html">
 
             <!-- Attraction -->
-            <label for="attraction">
-                Select Attraction *
-            </label>
+            <fieldset>
+                    <!-- <legend>Written Review</legend> -->
 
-            <select id="attraction" name="attraction" required>
-                <option value="" disabled selected>Select an attraction...</option>
-            </select>
+                    <label for="review">Write your review:</label>
+                    <textarea id="review" name="review" rows="4" cols="50"></textarea>
+
+                </fieldset>
+
+            
 
             <!-- Rating -->
             <fieldset>
